@@ -22,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/creativetimofficial/argon-dashboard-react/issues"
   },
-  "homepage": ".",
+  "homepage": "https://react-dashboard-template.herokuapp.com/portal",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

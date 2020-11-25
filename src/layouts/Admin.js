@@ -34,7 +34,7 @@ class Admin extends React.Component {
   }
   getRoutes = routes => {
     return routes.map((prop, key) => {
-      if (prop.layout === "/admin") {
+      if (prop.layout === "/portal/admin") {
         return (
           <Route
             path={prop.layout + prop.path}
@@ -66,7 +66,7 @@ class Admin extends React.Component {
           {...this.props}
           routes={routes}
           logo={{
-            innerLink: "/admin/index",
+            innerLink: "/portal/admin/index",
             imgSrc: require("assets/img/brand/argon-react.png"),
             imgAlt: "..."
           }}
@@ -78,7 +78,7 @@ class Admin extends React.Component {
           />
           <Switch>
             {this.getRoutes(routes)}
-            <Redirect from="*" to="/admin/index" />
+            <Redirect from="*" to="/portal/admin/index" />
           </Switch>
           <Container fluid>
             <AdminFooter />
